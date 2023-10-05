@@ -1,0 +1,3 @@
+﻿  FirstProject.cpp
+C:\Kodlar\C++\FirstProject\FirstProject\Triangle.h(57): warning C4715: 'Triangle::isTriangle': tüm denetim yolları değer döndürmez
+  FirstProject.vcxproj -> C:\Kodlar\C++\FirstProject\x64\Debug\FirstProject.exe
