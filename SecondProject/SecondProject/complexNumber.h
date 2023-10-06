@@ -17,7 +17,7 @@ public:
 	complexNumber addComplex(const complexNumber& oth);
 	complexNumber multiplyComplex(const complexNumber& oth);
 	complexNumber subtractComplex(complexNumber& oth);
-	complexNumber multiplyComplex(int constant);
+	complexNumber multiplyConstant(int constant);
 	void multiplyMinus();
 	void displayComplex();
 };
@@ -64,3 +64,18 @@ void complexNumber::multiplyMinus() {
 	real *= -1;
 	imag *= -1;
 }
+
+complexNumber complexNumber::multiplyConstant(int constant) {
+	complexNumber result;
+	result.real = real * constant;
+	result.imag = imag * constant;
+	return result;
+}
+
+complexNumber complexNumber::multiplyComplex(const complexNumber& oth) {
+	complexNumber result;
+	result.real = real * oth.real - imag * oth.imag;
+	result.imag = real * oth.imag + imag * oth.real;
+	return result;
+}
+

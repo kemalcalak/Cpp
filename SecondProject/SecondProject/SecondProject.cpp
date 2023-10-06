@@ -29,9 +29,15 @@ int main()
 	resultMain2 = number1.subtractComplex(number2);
 	resultMain2.displayComplex();
 
+	cout << "--------------------------------------" << endl;
+	complexNumber resultMain3;
+	resultMain3 = number1.multiplyConstant(4);
+	resultMain3.displayComplex();
 
-
-
+	cout << "--------------------------------------" << endl;
+	complexNumber resultMain4;
+	resultMain4 = number1.multiplyComplex(number2);
+	resultMain4.displayComplex();
 
 }
 
