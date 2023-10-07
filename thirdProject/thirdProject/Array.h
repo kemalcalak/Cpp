@@ -63,3 +63,31 @@ void Array::printItems() {
 	}
 	cout << "\n" << "Capacity:" << capacity << "size:" << size << endl;
 }
+
+void Array::removeIndexItem(int index) {
+	if (index < 0 || index >= size) {
+		cout << "Error! No item at the index" << index << endl;
+		return;
+	}
+	for (int i = index; i < size; i++) {
+		data[i] = data[i + 1];
+	}
+	size -= 1;
+	cout << "Item " << removeItem << "is deleted" << endl;
+}
+
+void Array::removeItem(int number) {
+	int counter = 0;
+	for (int i = 0; i <= size; i++) {
+		if (data[i] == number) {
+			for (int j = i; j < size; j++) {
+				data[j] = data[j + 1];
+			}
+			counter += 1;
+			i -= 1;
+		}
+	}
+	cout << counter << " items (" << number << ") " << "are deleted from the array" << endl;
+	size -= counter;
+}
+

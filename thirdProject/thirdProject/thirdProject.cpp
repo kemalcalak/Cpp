@@ -17,7 +17,9 @@ int main()
 	mainArray.AddItem(7);
 	mainArray.AddItem(41);
 	mainArray.AddItem(4);
+	mainArray.AddItem(3);
 	mainArray.AddItem(1);
+	mainArray.AddItem(3);
 	mainArray.AddItem(21);
 	mainArray.printItems();
 	mainArray.AddItem(71);
@@ -31,4 +33,13 @@ int main()
 
 	mainArray.printItems();
 	mainArray3.printItems();
+
+	mainArray3.removeIndexItem(3);
+	mainArray3.printItems();
+
+	mainArray3.removeItem(3);
+	mainArray3.printItems();
+
+
+
 }
