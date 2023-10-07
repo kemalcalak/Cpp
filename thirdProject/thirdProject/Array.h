@@ -40,3 +40,26 @@ Array::Array(const Array& copyArray) {
 	}
 	cout << "Array copied to target." << endl;
 }
+
+void Array::AddItem(int number) {
+	if (size == capacity) {
+		int* temp_data = new int[capacity * 2];
+		for (int i = 0; i < size; i++) {
+			temp_data[i] = data[i];
+		}
+		delete[] data;
+		data = temp_data;
+		capacity *= 2;
+	}
+	data[size] = number;
+	size++;
+}
+
+void Array::printItems() {
+	if (size != 0) {
+		for (int i = 0; i < size; i++) {
+			cout << data[i] << "-";
+		}
+	}
+	cout << "\n" << "Capacity:" << capacity << "size:" << size << endl;
+}
