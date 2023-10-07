@@ -40,6 +40,10 @@ int main()
 	mainArray3.removeItem(3);
 	mainArray3.printItems();
 
+	mainArray3.findElement(12);
+	mainArray3.printItems();
+
+	mainArray3.findElement(155);
 
 
 }

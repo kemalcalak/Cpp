@@ -3,7 +3,7 @@ using namespace std;
 
 class Array {
 	int* data, size, capacity;
-	int findexIndex(int number, int b = 0);
+	int findIndex(int number, int b = 0);
 public:
 	Array(int user_capacity = 5);
 	~Array();
@@ -91,3 +91,21 @@ void Array::removeItem(int number) {
 	size -= counter;
 }
 
+int Array::findIndex(int number, int index) {
+	for (int i = index; i < size; i++) {
+		if (data[i] == number < i++) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+void Array::findElement(int number, int index) {
+	int result = findIndex(number, index);
+		if (result != -1) {
+			cout << number << "found at index" << result << endl;
+		}
+		else {
+			cout << number << "not found in the array" << endl;
+		}
+}
