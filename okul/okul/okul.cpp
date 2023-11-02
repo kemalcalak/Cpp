@@ -23,11 +23,24 @@ int main() {
     bir.yaz();
     iki.yaz();
     */
-
+    /*
     sekermakina makinam;
     cout << "toplam seker sayisi: " << makinam.mevcutseker() << endl;
     cout << "bir seker ucreti: " << makinam.sekerucret() << " TL" << endl;
     makinam.satis(); 
     cout << "seker sayisi: " << makinam.mevcutseker() << endl;
+    */
+    /*
+    Dizi d(5);
+    d.oku();
+    d.goster();
+    cout << "-------------------------" << endl;
+    d.sirala();
+    d.goster();
+    cout << "-------------------------" << endl;
+    d.degistir(3, 42);
+    d.goster();
+    */
+
 }
 

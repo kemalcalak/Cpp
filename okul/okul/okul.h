@@ -80,3 +80,56 @@ private:
     int sekersayi;
     int ucret;
 };
+
+class Dizi {
+private:
+    int* dizi; 
+    int boyut; 
+
+public:
+    Dizi(int boyut) {
+        this->boyut = boyut;
+        dizi = new int[boyut]; 
+    }
+
+    ~Dizi() {
+        delete[] dizi; 
+    }
+
+    void oku() {
+        for (int i = 0; i < boyut; i++) {
+            cout << "Dizi elemani " << i + 1 << ": ";
+            cin >> dizi[i];
+        }
+    }
+
+    void goster() {
+        for (int i = 0; i < boyut; i++) {
+            cout << dizi[i] << endl;
+        }
+    }
+
+    int degistir(int sira, int num) {
+        if (sira >= 1 && sira <= boyut) {
+            dizi[sira - 1] = num;
+            return 1; 
+        }
+        else {
+            return -1; 
+        }
+    }
+
+    void sirala() {
+        int temp;
+        for (int i = 0; i < boyut; i++) {
+            for (int j = i + 1; j < boyut; j++) {
+                if (dizi[i] > dizi[j]) {
+                    temp = dizi[i];
+                    dizi[i] = dizi[j];
+                    dizi[j] = temp;
+                }
+            }
+        }
+    }
+};
+
