@@ -37,3 +37,40 @@ public:
 		empSalary += 200;
 	}
 };
+//reference
+void print(Employee& employeeType) {
+	employeeType.displayInformation();
+}
+//pointer
+void print2(Employee* employeeType) {
+	employeeType->displayInformation();
+}
+//value
+void print3(Employee employeeType) {
+	employeeType.displayInformation();
+}
+
+class Animal {
+public:
+	virtual void talk() = 0;
+};
+
+class Dog :public Animal {
+public:
+	void talk() {
+		cout << "Hav Hav." << endl;
+	}
+};
+class Cat :public Animal {
+public:
+	void talk() {
+		cout << "Meov." << endl;
+	}
+
+};
+class Duck :public Animal {
+public:
+	void talk() {
+		cout << "Vak Vak." << endl;
+	}
+};

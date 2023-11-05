@@ -130,7 +130,10 @@
     <ClCompile Include="downcastingUpcasting.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Shape.h" />
     <ClInclude Include="upcastingDowncasting.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
