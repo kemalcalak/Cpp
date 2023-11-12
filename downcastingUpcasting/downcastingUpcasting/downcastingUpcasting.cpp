@@ -5,15 +5,15 @@
 
 int main()
 {
-    /*
+    
     //UPCASTING
 
     Employee* emp1, * emp2;
-    Manager mng("Ogun", "Birinci", 3500, "Software");
+    Manager mng("Kemal", "Calak", 3500, "Software");
     Employee emp3("Duygu", "Keydal", 4000);
 
     emp1 = &mng;
-    emp2 = &emp3;
+    emp2= &emp3;
     emp1->displayInformation();
     emp2->displayInformation();
 
@@ -35,14 +35,14 @@ int main()
     mng2->displayInformation();
 
     //CALL BY REFERENCE-POINTER-VALUE.
-    Employee emp1("Ogun", "Birinci", 3500);
-    Manager mng1("Ogun", "Birinci", 3500, "Software");
+    Employee emp1("Kemal", "Calak", 3500);
+    Manager mng1("Kemal", "Calak", 3500, "Software");
     cout << "Reference Parameter:" << endl;
     print(emp1);
     print(mng1);
     cout << "\n-----------------------------------------------\nPOINTER" << endl;
-    Employee* emp2 = new Employee("Ogun", "Birinci", 3500);
-    Manager* mng2 = new Manager("Ogun", "Birinci", 3500, "Software");
+    Employee* emp2 = new Employee("Kemal", "Calak", 3500);
+    Manager* mng2 = new Manager("Kemal", "Calak", 3500, "Software");
     print2(emp2);
     print2(mng2);
 
@@ -51,14 +51,15 @@ int main()
     print3(mng1);
 
     //Virtual Destructor
-    Manager* mng = new Manager("Ogun", "Birinci", 3500, "Software");
+    Manager* mng = new Manager("Kemal", "Calak", 3500, "Software");
     Employee* emp = mng;
-    Employee* emp2 = new Manager("Ogun", "Birinci", 3500, "Software");
+    Employee* emp2 = new Manager("Kemal", "Calak", 3500, "Software");
 
 
     delete emp2;
     delete emp;
-
+    
+    /*
     Cat* catAnimal = new Cat();
     Dog* dogAnimal = new Dog();
     Duck* duckAnimal = new Duck();
@@ -68,8 +69,9 @@ int main()
         animalObject[i]->talk();
     }
     */
+    //person 
     /*
-    Person* pArr[] = { new TurkishPerson("Ogun"),new TurkishPerson("Duygu"),new TurkishPerson("Oguz"),new DeutschePerson("Thomas"),new DeutschePerson("Carl") };
+    Person* pArr[] = { new TurkishPerson("Kemal"),new TurkishPerson("Duygu"),new TurkishPerson("Oguz"),new DeutschePerson("Thomas"),new DeutschePerson("Carl") };
     int numberOfPerson = sizeof(pArr) / sizeof(pArr[0]);
     for (int i = 0; i < numberOfPerson; i++) {
         for (int j = 0; j < numberOfPerson; j++) {
@@ -82,6 +84,7 @@ int main()
     */
     
     //Vehicle
+    /*
     Vehicle* vPtr[] = { new Car(125.850,"BMW"),new MotorCycle(37.500,"Honda") };
     int which_vehicle;
     char inputVehicle;
@@ -121,7 +124,7 @@ int main()
         sArr[i]->calculatePerimeter();
         sArr[i]->display();
     }
-
+    */
 
     return 0;
 }

@@ -133,3 +133,56 @@ public:
     }
 };
 
+class kisi {
+public:
+    int sicilno;
+protected:
+    string isim;
+public:
+    kisi(string x, int y) :isim(x), sicilno(y) {}
+    void gorev();
+};
+
+class proje {
+    kisi *calisan[5];
+    string pa;
+    static int say;
+public:
+    void ekle(kisi *x);
+    void baslat() {}
+
+
+};
+void proje::ekle(kisi* x){
+    calisan[say] = x;
+    say++;
+}
+void proje::baslat() {
+	for (int i = 0; i < say; i++) {
+		calisan[i]->gorev();
+	}
+}
+int proje::say = 0;
+class testek {
+	int ekipNo;
+	string ekipAD;
+public:
+    testek(int ekipNo, string ekipAD) {
+		this->ekipNo = ekipNo;
+		this->ekipAD = ekipAD;
+	}
+	
+};
+
+
+class tasarimek :public kisi {
+public:
+	tasarimek(string x, int y) :kisi(x, y) {}
+    void gorev() { cout << "tasarim islemi baslatildi" << endl; };
+};
+
+class yazilimek :public kisi {
+public:
+	yazilimek(string x, int y) :kisi(x, y) {}
+	void gorev();
+};

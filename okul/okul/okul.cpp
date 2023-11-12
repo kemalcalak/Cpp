@@ -42,5 +42,17 @@ int main() {
     d.goster();
     */
 
+    proje yapayzeka("tanima sistemi");
+    tasarimek bir("ahmet",100);
+    yazilimek iki("nihal",200);
+    yazilimek uc("derya", 300);
+    testek dort("veli", 400);
+    testek bes("canan", 500);
+    yapayzeka.ekle(&bir);
+    yapayzeka.ekle(&iki);
+    yapayzeka.ekle(&uc);
+    yapayzeka.ekle(&dort);
+    yapayzeka.ekle(&bes);
+
 }
 

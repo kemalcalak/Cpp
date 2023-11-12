@@ -3,7 +3,7 @@
 int main()
 {
 	Employee employee1 = { "Ogun","Birinci","Software","Engineer",4500,5 };
-	Employee employee2 = { "ALİ","Ikinci","Software","Engineer",4500,5 };
+	Employee employee2 = { "Ali","Ikinci","Software","Engineer",4500,5 };
 	Employee employee3 = { "Burak","Ucuncu","IT","Programmer",4500,5 };
 	Employee employee4 = { "Enes","Dorduncu","Accounting","Engineer",4500,5 };
 	Manager manager1 = { "Duygu","Keydal","Software","President",8500,10 };
