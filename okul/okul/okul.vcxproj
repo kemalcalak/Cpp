@@ -130,6 +130,7 @@
     <ClCompile Include="okul.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="eski kodlar.h" />
     <ClInclude Include="okul.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
